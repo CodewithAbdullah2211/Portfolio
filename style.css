@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@400&family=Audiowide&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Georama', sans-serif; /* Updated to Georama */
     line-height: 1.6;
     color: #E0E0E0; /* Light Gray for text */
     background: linear-gradient(to bottom, #0D0D0D, #1E1E4F); /* Gradient background */
@@ -13,7 +15,7 @@ body {
 }
 
 header {
-    background: #1E1E4F; /* Dark Slate Blue */
+    background: #1E1E4F;
     color: #FFFFFF; /* Light Text */
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
@@ -29,7 +31,8 @@ header .container {
     align-items: center;
 }
 
-h1 {
+header .container h1 {
+    font-family: 'Audiowide', sans-serif; /* Updated to Audiowide */
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 2px;
@@ -53,51 +56,25 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFD700; /* Adjusted for better visibility */
 }
-:root {
-    --primary-color: #FFC20E; /* Bright Yellow */
-    --secondary-color: #1E1E4F; /* Dark Slate Blue */
-    --text-color: #FFFFFF; /* Light Text */
-    --background-color: #2C2C54; /* Darker Background for Contrast */
-    --font-family: 'Helvetica Neue', sans-serif;
-    --border-radius: 20px;
-    --transition-speed: 0.3s;
-}
 
 .hero {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, var(--primary-color) 50%, var(--secondary-color) 50%);
-    z-index: 0;
-}
-
-.hero-content {
+    height: 95vh;
+    background-color: #2C2C54; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-    padding: 0 20px; /* Adjust for spacing */
+    padding: 0 100px;
 }
 
 .text-container {
-    flex: 1;
+    width: 55vw;
     padding: 40px;
-    color: var(--text-color);
+    color: #FFFFFF; /* Light Text */
 }
 
 h2 {
+    font-family: 'Audiowide', sans-serif; /* Updated to Audiowide */
     font-size: 3rem; /* Larger heading */
     margin-bottom: 1rem;
 }
@@ -109,23 +86,23 @@ p {
 
 .cta-button {
     display: inline-block;
-    background-color: var(--text-color);
-    color: var(--secondary-color);
+    background-color: #FFFFFF; /* Light Text */
+    color: #1E1E4F; /* Dark Slate Blue */
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: var(--border-radius);
+    border-radius: 20px; /* Border radius */
     font-weight: bold;
-    transition: background-color var(--transition-speed), transform var(--transition-speed);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .cta-button:hover {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: #FFC20E; /* Dark Slate Blue */
+    color: #FFFFFF; /* Light Text */
     transform: scale(1.05);
 }
 
 .image-container {
-    flex: 1;
+    width: 45vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,15 +110,11 @@ p {
 }
 
 .image-container img {
-    width: 300px; /* Fixed size for the image */
+    width: 70%; 
     height: auto;
-    border-radius: var(--border-radius);
-    transition: transform var(--transition-speed);
-    border: 5px solid var(--primary-color); /* Bold border */
-}
-
-.image-container img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
+    border-radius: 50%;
+    border: 2px solid #FFC20E;
+    transition: transform 0.3s;
 }
 
 #about {
@@ -166,6 +139,7 @@ p {
 }
 
 .about-text h2 {
+    font-family: 'Audiowide', sans-serif; /* Updated to Audiowide */
     margin-bottom: 20px;
     font-size: 2.5rem;
 }
@@ -206,6 +180,7 @@ p {
 }
 
 #services h2 {
+    font-family: 'Audiowide', sans-serif; /* Updated to Audiowide */
     margin-bottom: 40px;
     font-size: 2rem;
     color: #FFFFFF; /* Light Text */
@@ -238,6 +213,7 @@ p {
 }
 
 #testimonials h2 {
+    font-family: 'Audiowide', sans-serif; /* Updated to Audiowide */
     text-align: center;
     margin-bottom: 40px;
     font-size: 2rem;
@@ -269,6 +245,7 @@ blockquote {
 }
 
 #contact h2 {
+    font-family: 'Audiowide', sans-serif; /* Updated to Audiowide */
     margin-bottom: 40px;
     font-size: 2rem;
     color: #FFFFFF; /* Light Text */
@@ -294,13 +271,13 @@ input, textarea {
 
 input:focus, textarea:focus {
     outline: none;
-    border-color: #FFC20E; /* Bright Yellow */
+    border-color: #e2ab05; /* Bright Yellow */
     box-shadow: 0 0 5px rgba(255, 194, 14, 0.5);
 }
 
 button {
     padding: 10px;
-    background: #FFC20E; /* Bright Yellow */
+    background: #e2ab05; /* Bright Yellow */
     color: #FFFFFF; /* Light Text */
     border: none;
     border-radius: 5px;
@@ -309,7 +286,7 @@ button {
 }
 
 button:hover {
-    background: #1E1E4F; /* Dark Slate Blue */
+    background: #2C2C54; /* Dark Slate Blue */
 }
 
 footer {
