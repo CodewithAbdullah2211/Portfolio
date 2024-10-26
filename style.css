@@ -59,7 +59,7 @@ nav ul li a:hover {
 
 .hero {
     position: relative;
-    height: 95vh;
+    height: 85vh;
     background-color: #2C2C54; 
     display: flex;
     justify-content: space-between;
@@ -110,11 +110,10 @@ p {
 }
 
 .image-container img {
-    width: 70%; 
+    width: 95%; 
     height: auto;
-    border-radius: 50%;
-    border: 2px solid #FFC20E;
     transition: transform 0.3s;
+    margin-bottom: 80px;
 }
 
 #about {
@@ -194,18 +193,51 @@ p {
 }
 
 .service {
-    background: #0D0D0D; /* Midnight Black */
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    background: #1E1E4F; /* Dark Slate Blue */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
     padding: 20px;
     margin: 10px;
-    width: 250px;
+    width: 400px;
     text-align: center;
-    transition: transform 0.3s; /* Add transition for smooth hover effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
 }
 
 .service:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px); /* Slight lift on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+.service-icon {
+    font-size: 60px; /* Icon size */
+    color: #FFD700; /* Gold color for icons */
+    margin-bottom: 15px; /* Space below the icon */
+}
+
+.service h3 {
+    font-family: 'Audiowide', sans-serif; /* Font consistency */
+    color: #FFD700; /* Gold color for headings */
+    margin-bottom: 10px;
+    font-size: 1.8rem; /* Larger heading */
+}
+
+.service p {
+    color: #E0E0E0; /* Light Gray for text */
+    margin: 0; /* Reset margin */
+    font-size: 1.1rem; /* Slightly larger for readability */
+    line-height: 1.4; /* Improved spacing */
+}
+
+.service ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Reset padding */
+    margin: 10px 0 0; /* Margin on top */
+}
+
+.service ul li {
+    color: #E0E0E0; /* Light Gray for text */
+    font-size: 0.9rem; /* Smaller font size for list items */
+    margin: 5px 0; /* Spacing between items */
 }
 
 #testimonials {
