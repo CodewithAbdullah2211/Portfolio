@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Body styles */
@@ -13,7 +14,6 @@ body {
     line-height: 1.6;
     color: #E0E0E0;
     background: linear-gradient(to bottom, #0D0D0D, #1E1E4F);
-    scroll-behavior: smooth;
 }
 
 /* Header styles */
@@ -21,15 +21,13 @@ body {
 header {
     background: #1E1E4F;
     color: #FFFFFF;
-    padding: 20px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    position: sticky;
-    z-index: 10;
+    padding: 15px 0;
 }
 
 header .container {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +35,7 @@ header .container {
 
 header .container h1 {
     font-family: 'Audiowide', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -65,7 +63,7 @@ nav ul li a:hover {
 /* Hero section styles */
 .hero {
     position: relative;
-    height: 85vh;
+    height: 90vh;
     background-color: #2C2C54; 
     display: flex;
     justify-content: space-between;
