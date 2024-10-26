@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Georama:wght@400&family=Audiowide&display=swap');
 
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styles */
 body {
-    font-family: 'Georama', sans-serif; /* Updated to Georama */
+    font-family: 'Georama', sans-serif;
     line-height: 1.6;
-    color: #E0E0E0; /* Light Gray for text */
-    background: linear-gradient(to bottom, #0D0D0D, #1E1E4F); /* Gradient background */
-    scroll-behavior: smooth; /* Smooth scrolling */
+    color: #E0E0E0;
+    background: linear-gradient(to bottom, #0D0D0D, #1E1E4F);
+    scroll-behavior: smooth;
 }
+
+/* Header styles */
 
 header {
     background: #1E1E4F;
-    color: #FFFFFF; /* Light Text */
+    color: #FFFFFF;
     padding: 20px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     position: sticky;
     z-index: 10;
 }
@@ -32,12 +36,13 @@ header .container {
 }
 
 header .container h1 {
-    font-family: 'Audiowide', sans-serif; /* Updated to Audiowide */
+    font-family: 'Audiowide', sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
+/* Navigation styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -48,15 +53,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #E0E0E0; /* Light Gray */
+    color: #E0E0E0;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #FFD700; /* Adjusted for better visibility */
+    color: #FFD700;
 }
 
+/* Hero section styles */
 .hero {
     position: relative;
     height: 85vh;
@@ -70,12 +76,12 @@ nav ul li a:hover {
 .text-container {
     width: 55vw;
     padding: 40px;
-    color: #FFFFFF; /* Light Text */
+    color: #FFFFFF;
 }
 
 h2 {
-    font-family: 'Audiowide', sans-serif; /* Updated to Audiowide */
-    font-size: 3rem; /* Larger heading */
+    font-family: 'Audiowide', sans-serif;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -86,18 +92,18 @@ p {
 
 .cta-button {
     display: inline-block;
-    background-color: #FFFFFF; /* Light Text */
-    color: #1E1E4F; /* Dark Slate Blue */
+    background-color: #FFFFFF;
+    color: #1E1E4F;
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: 20px; /* Border radius */
+    border-radius: 20px;
     font-weight: bold;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #FFC20E; /* Dark Slate Blue */
-    color: #FFFFFF; /* Light Text */
+    background-color: #FFC20E;
+    color: #FFFFFF;
     transform: scale(1.05);
 }
 
@@ -116,9 +122,10 @@ p {
     margin-bottom: 80px;
 }
 
+/* About section styles */
 #about {
     padding: 60px 20px;
-    background: #1E1E4F; /* Dark Slate Blue */
+    background: #1E1E4F;
 }
 
 .about-container {
@@ -129,16 +136,16 @@ p {
     margin: 0 auto;
     padding: 40px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .about-text {
     max-width: 600px;
-    color: #FFFFFF; /* Light Text */
+    color: #FFFFFF;
 }
 
 .about-text h2 {
-    font-family: 'Audiowide', sans-serif; /* Updated to Audiowide */
+    font-family: 'Audiowide', sans-serif;
     margin-bottom: 20px;
     font-size: 2.5rem;
 }
@@ -165,122 +172,128 @@ p {
 }
 
 .about-text ul li {
-    background: #FFC20E; /* Bright Yellow */
-    color: #FFFFFF; /* Light Text */
+    background: #FFC20E;
+    color: #FFFFFF;
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
 }
 
+/* Services section styles */
 #services {
     padding: 60px 20px;
-    background: #1E1E4F; /* Dark Slate Blue */
+    background: #1E1E4F;
     text-align: center;
 }
 
 #services h2 {
-    font-family: 'Audiowide', sans-serif; /* Updated to Audiowide */
+    font-family: 'Audiowide', sans-serif;
     margin-bottom: 40px;
     font-size: 2rem;
-    color: #FFFFFF; /* Light Text */
+    color: #FFFFFF;
 }
 
 .services-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px; /* Added gap for spacing */
+    gap: 20px;
 }
 
 .service {
-    background: #1E1E4F; /* Dark Slate Blue */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    background: #1E1E4F;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     padding: 20px;
     margin: 10px;
     width: 400px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service:hover {
-    transform: translateY(-8px); /* Slight lift on hover */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 .service-icon {
-    font-size: 60px; /* Icon size */
-    color: #FFD700; /* Gold color for icons */
-    margin-bottom: 15px; /* Space below the icon */
+    font-size: 60px;
+    color: #FFD700;
+    margin-bottom: 15px;
 }
 
 .service h3 {
-    font-family: 'Audiowide', sans-serif; /* Font consistency */
-    color: #FFD700; /* Gold color for headings */
+    font-family: 'Audiowide', sans-serif;
+    color: #FFD700;
     margin-bottom: 10px;
-    font-size: 1.8rem; /* Larger heading */
+    font-size: 1.8rem;
 }
 
 .service p {
-    color: #E0E0E0; /* Light Gray for text */
-    margin: 0; /* Reset margin */
-    font-size: 1.1rem; /* Slightly larger for readability */
-    line-height: 1.4; /* Improved spacing */
+    color: #E0E0E0;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
 
 .service ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Reset padding */
-    margin: 10px 0 0; /* Margin on top */
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
 }
 
 .service ul li {
-    color: #E0E0E0; /* Light Gray for text */
-    font-size: 0.9rem; /* Smaller font size for list items */
-    margin: 5px 0; /* Spacing between items */
+    color: #E0E0E0;
+    font-size: 0.9rem;
+    margin: 5px 0;
 }
 
+/* Testimonials section styles */
 #testimonials {
     padding: 60px 20px;
 }
 
 #testimonials h2 {
-    font-family: 'Audiowide', sans-serif; /* Updated to Audiowide */
+    font-family: 'Audiowide', sans-serif;
     text-align: center;
     margin-bottom: 40px;
     font-size: 2rem;
-    color: #FFFFFF; /* Light Text */
+    color: #FFFFFF;
 }
 
 .testimonials-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 blockquote {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
     font-style: italic;
     margin: 20px;
     padding: 10px;
-    border-left: 5px solid #FFD700; /* Bright Yellow */
-    background: rgba(0, 0, 0, 0.5); /* Slight transparency */
+    border-left: 5px solid #FFD700;
+    background: rgb(30, 30, 79);
     border-radius: 10px;
-    max-width: 600px;
     text-align: center;
-    color: #E0E0E0; /* Light Gray */
+    color: #E0E0E0;
 }
 
+/* Contact section styles */
 #contact {
     padding: 60px 20px;
-    background: #1E1E4F; /* Dark Slate Blue */
+    background: #1E1E4F;
     text-align: center;
 }
 
 #contact h2 {
-    font-family: 'Audiowide', sans-serif; /* Updated to Audiowide */
+    font-family: 'Audiowide', sans-serif;
     margin-bottom: 40px;
     font-size: 2rem;
-    color: #FFFFFF; /* Light Text */
+    color: #FFFFFF;
 }
 
 form {
@@ -294,23 +307,23 @@ form {
 input, textarea {
     margin: 10px 0;
     padding: 10px;
-    border: 1px solid #FFC20E; /* Bright Yellow */
+    border: 1px solid #FFC20E;
     border-radius: 5px;
     width: 100%;
-    background: #1E1E4F; /* Dark Slate Blue */
-    color: #E0E0E0; /* Light Gray */
+    background: #1E1E4F;
+    color: #E0E0E0;
 }
 
 input:focus, textarea:focus {
     outline: none;
-    border-color: #e2ab05; /* Bright Yellow */
+    border-color: #e2ab05;
     box-shadow: 0 0 5px rgba(255, 194, 14, 0.5);
 }
 
 button {
     padding: 10px;
-    background: #e2ab05; /* Bright Yellow */
-    color: #FFFFFF; /* Light Text */
+    background: #e2ab05;
+    color: #FFFFFF;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -318,14 +331,15 @@ button {
 }
 
 button:hover {
-    background: #2C2C54; /* Dark Slate Blue */
+    background: #2C2C54;
 }
 
+/* Footer styles */
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #1E1E4F; /* Dark Slate Blue */
-    color: #FFFFFF; /* Light Text */
+    background: #1E1E4F;
+    color: #FFFFFF;
 }
 
 footer p {
@@ -333,7 +347,7 @@ footer p {
 }
 
 footer a {
-    color: #E0E0E0; /* Light Gray */
+    color: #E0E0E0;
     text-decoration: none;
     margin: 0 10px;
 }
